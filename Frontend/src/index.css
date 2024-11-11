@@ -1,0 +1,244 @@
+/* Full viewport height and width */
+.welcome-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow:scroll;
+}
+
+/* Fullscreen background image */
+.image-overlay img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover; /* Ensures image covers the whole container without distortion */
+}
+
+/* Centered overlay text */
+.text-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional background for readability */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.text-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+}
+
+/* Main container styles */
+.container {
+  background-color: #faf8f5;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+/* Category button styles */
+.category-btn {
+  color: #4CAF50;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.category-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Card styles */
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: #4CAF50;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+
+
+
+.navbar {
+  
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  position: fixed;  /* Fixes the navbar at the top */
+  top: 0;  /* Aligns it to the top of the screen */
+  width: 100%;  /* Ensures the navbar stretches across the screen */
+  z-index: 1000; /* Makes sure the navbar stays above other content */
+}
+
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin: 0 15px;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover {
+  color: #f0a500;
+}
+
+/* Add padding to the top of the body content to prevent overlap */
+body {
+  padding-top: 60px;  /* Adjust the padding-top value according to your navbar's height */
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #4CAF50;
+  padding: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+nav a:hover {
+  background-color: #45a049;
+}
+
+form {
+ 
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login-container {
+  display: flex;
+  justify-content: center;   /* Horizontally center the form */
+  align-items: center;       /* Vertically center the form */
+  height: 100vh;             /* Full viewport height */
+  background-color: #f4f4f4; /* Optional: background color for the page */
+}
+
+input, button {
+  margin: 0.5em 0;
+  padding: 0.8em;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
